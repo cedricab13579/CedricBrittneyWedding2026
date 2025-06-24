@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hollyfield Manor - Wedding Venue | Brittney & Cedric</title>
-    <link rel="stylesheet" href="venue-styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,137 +12,142 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <a href="index.html">B & C</a>
+                <a href="index.html">
+                    <img src="Images/BC Logo.png" alt="Brittney & Cedric Wedding Logo" class="nav-logo">
+                </a>
             </div>
             <div class="nav-menu">
-                <a href="index.html" class="nav-link">Back to Wedding</a>
-                <a href="#about" class="nav-link">About the Manor</a>
-                <a href="#location" class="nav-link">Location</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="venue.html" class="nav-link active">Venue</a>
+                <a href="registry.html" class="nav-link">Registry</a>
+                <a href="rsvp.html" class="nav-link">RSVP</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Hollyfield Manor Image -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-image">
-                <img src="images/hollyfield.jpg" alt="Hollyfield Manor Wedding Ceremony" />
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1 class="hero-title">Hollyfield Manor</h1>
-                    <p class="hero-subtitle">Where Dreams Come True</p>
-                    <p class="hero-location">Richmond, Virginia</p>
-                </div>
+    <!-- Hero Section with Manor Image -->
+    <section class="venue-hero">
+        <div class="venue-hero-image">
+            <img src="images/hollyfield-manor.jpg" alt="Wedding ceremony at Hollyfield Manor" />
+            <div class="venue-hero-overlay"></div>
+            <div class="venue-hero-content">
+                <h1 class="venue-hero-title">Hollyfield Manor</h1>
+                <p class="venue-hero-subtitle">Where Love Stories Begin</p>
+                <p class="venue-hero-location">Richmond, Virginia</p>
+                <a href="#about" class="venue-hero-btn">Discover Our Venue</a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="venue-about">
         <div class="container">
-            <div class="about-content">
+            <div class="section-header">
                 <h2 class="section-title">About Hollyfield Manor</h2>
-                
-                <div class="manor-description">
-                    <div class="description-text">
-                        <p class="intro-text">
-                            Nestled in the heart of Richmond, Virginia, Hollyfield Manor stands as a testament to timeless elegance and Southern charm. This magnificent antebellum mansion, with its iconic white columns and stately facade, has been the backdrop for countless love stories and unforgettable celebrations.
-                        </p>
-                        
-                        <div class="description-columns">
-                            <div class="column">
-                                <h3>Historic Elegance</h3>
-                                <p>
-                                    Built in the early 1800s, Hollyfield Manor combines historic grandeur with modern amenities. The manor's classic Greek Revival architecture features towering white columns, symmetrical design, and traditional brick construction that exemplifies the finest of Southern architectural heritage.
-                                </p>
-                                
-                                <h3>Perfect Setting</h3>
-                                <p>
-                                    The manor's expansive front lawn provides a breathtaking ceremony space with the stately mansion as your backdrop. Mature oak trees frame the property, while meticulously maintained gardens and classic brick walkways create an atmosphere of romance and sophistication.
-                                </p>
-                            </div>
-                            
-                            <div class="column">
-                                <h3>Ceremony & Reception</h3>
-                                <p>
-                                    The front lawn can accommodate up to 200 guests for your ceremony, with the manor's grand facade providing a stunning backdrop for your vows. The elegant interior offers sophisticated reception areas with crystal chandeliers, hardwood floors, and period furnishings.
-                                </p>
-                                
-                                <h3>Modern Amenities</h3>
-                                <p>
-                                    While preserving its historic charm, Hollyfield Manor has been carefully updated with modern conveniences including climate control, professional lighting systems, full catering facilities, and ample parking to ensure your celebration is both beautiful and comfortable.
-                                </p>
-                            </div>
-                        </div>
+                <p class="section-subtitle">A timeless Southern estate where elegance meets romance, creating the perfect backdrop for your most cherished moments.</p>
+            </div>
+
+            <div class="venue-about-content">
+                <div class="venue-about-text">
+                    <div class="venue-about-section">
+                        <h3>Historic Grandeur</h3>
+                        <p>Built in the early 1800s, Hollyfield Manor stands as a magnificent example of antebellum architecture. The stately white columns, symmetrical facade, and classic brick construction create an atmosphere of timeless elegance that has welcomed countless celebrations throughout its storied history.</p>
+                    </div>
+                    <div class="venue-about-section">
+                        <h3>Perfect Ceremony Setting</h3>
+                        <p>The expansive front lawn provides an enchanting ceremony space with the manor's grand facade as your backdrop. The classic brick walkway creates a stunning aisle, while mature oak trees and manicured gardens frame your special moment in natural beauty.</p>
                     </div>
                 </div>
-
-                <!-- Key Features -->
-                <div class="features-section">
-                    <h3 class="features-title">Why Choose Hollyfield Manor</h3>
-                    <div class="features-grid">
-                        <div class="feature-item">
-                            <div class="feature-icon">🏛️</div>
-                            <h4>Historic Architecture</h4>
-                            <p>Authentic 1800s antebellum mansion with grand columns and period details</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🌳</div>
-                            <h4>Beautiful Grounds</h4>
-                            <p>Expansive lawns, mature oak trees, and manicured gardens</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">📸</div>
-                            <h4>Picture Perfect</h4>
-                            <p>Every angle offers stunning photo opportunities for your special day</p>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🎉</div>
-                            <h4>Versatile Spaces</h4>
-                            <p>Multiple indoor and outdoor areas for ceremonies and receptions</p>
-                        </div>
-                    </div>
+                <div class="venue-highlights">
+                    <h4>Venue Highlights</h4>
+                    <ul class="venue-highlights-list">
+                        <li>Capacity for up to 200 guests</li>
+                        <li>Historic 1800s architecture</li>
+                        <li>Stunning front lawn ceremony space</li>
+                        <li>Elegant interior reception areas</li>
+                        <li>Professional event coordination</li>
+                        <li>Full catering facilities</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Location & Map Section -->
-    <section id="location" class="location">
+    <!-- Features Section -->
+    <section class="venue-features">
         <div class="container">
-            <h2 class="section-title">Location & Directions</h2>
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Hollyfield Manor</h2>
+                <p class="section-subtitle">Every detail has been thoughtfully designed to create an unforgettable wedding experience</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🏛️</div>
+                    <h3>Historic Architecture</h3>
+                    <p>Authentic antebellum mansion with grand columns and timeless Southern charm</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌳</div>
+                    <h3>Beautiful Grounds</h3>
+                    <p>Expansive lawns, mature oak trees, and meticulously maintained gardens</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📸</div>
+                    <h3>Picture Perfect</h3>
+                    <p>Every corner offers stunning photo opportunities for your special day</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✨</div>
+                    <h3>Full Service</h3>
+                    <p>Dedicated coordination team and preferred vendor partnerships</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="venue-location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Location & Contact</h2>
+                <p class="section-subtitle">Conveniently located in the heart of Richmond, Virginia</p>
+            </div>
+
             <div class="location-content">
                 <div class="location-info">
-                    <div class="address-card">
+                    <div class="location-card">
+                        <div class="location-icon">📍</div>
                         <h3>Address</h3>
-                        <p>
-                            Hollyfield Manor<br>
-                            2468 Manor Drive<br>
-                            Richmond, VA 23173
-                        </p>
-                    </div>
-                    
-                    <div class="directions-card">
-                        <h3>Getting There</h3>
-                        <p><strong>From Richmond International Airport (RIC):</strong></p>
-                        <p>Take I-64 West to Exit 190A. Follow Route 288 South for 8 miles, then take Exit 17 for Manor Drive. The venue will be on your right.</p>
-                        
-                        <p><strong>From Downtown Richmond:</strong></p>
-                        <p>Take Route 288 South for 15 miles to Exit 17 for Manor Drive. Turn left and the venue will be on your right after 0.5 miles.</p>
+                        <p>Hollyfield Manor<br>289 Hollyfield Ln, Manquin<br>Richmond, VA 23106</p>
+                        <a href="https://maps.google.com/maps?q=289+Hollyfield+Ln,+Manquin,+Richmond,+VA+23106" target="_blank" class="btn btn-primary">Get Directions</a>
                     </div>
 
-                    <div class="contact-card">
-                        <h3>Contact Information</h3>
-                        <p>
-                            <strong>Phone:</strong> (804) 555-MANOR<br>
-                            <strong>Email:</strong> events@hollyfieldmanor.com<br>
-                            <strong>Website:</strong> www.hollyfieldmanor.com
-                        </p>
+                    <div class="location-card">
+                        <div class="location-icon">✈️</div>
+                        <h3>Getting There</h3>
+                        <div class="travel-directions">
+                            <p><strong>From Richmond International Airport (RIC):</strong><br>30 minutes drive • Take I-64 West to Exit 190A, follow Route 288 South for 8 miles, then take Exit 17 for Manor Drive</p>
+                            <p><strong>From Downtown Richmond:</strong><br>25 minutes drive • Take Route 288 South for 15 miles to Exit 17 for Manor Drive</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card">
+                        <div class="location-icon">📞</div>
+                        <h3>Contact</h3>
+                        <p><strong>Email:</strong> events@hollyfieldmanor.com<br><strong>Website:</strong> www.hollyfieldmanor.com</p>
                     </div>
                 </div>
-                
+
                 <div class="map-container">
-                    <div id="map" class="google-map"></div>
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <h4>Interactive Map</h4>
+                            <p>Hollyfield Manor<br>289 Hollyfield Ln, Manquin<br>Richmond, VA 23106</p>
+                            <a href="https://maps.google.com/maps?q=289+Hollyfield+Ln,+Manquin,+Richmond,+VA+23106" target="_blank">View on Google Maps →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,8 +159,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Hollyfield Manor</h4>
-                    <p>2468 Manor Drive<br>Richmond, VA 23173</p>
-                    <p>Phone: (804) 555-MANOR</p>
+                    <p>289 Hollyfield Ln, Manquin<br>Richmond, VA 23106</p>
                 </div>
                 <div class="footer-section">
                     <h4>Wedding Information</h4>
@@ -163,112 +167,14 @@
                     <a href="index.html" class="footer-link">Back to Wedding Website</a>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Questions about the venue?<br>events@hollyfieldmanor.com</p>
+                    <h4>Important Dates</h4>
+                    <p>RSVP Deadline: September 1, 2026<br>Wedding Day: October 17, 2026</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Google Maps JavaScript API -->
     <script>
-        let map;
-        let marker;
-
-        function initMap() {
-            // Hollyfield Manor coordinates (approximate location in Richmond, VA)
-            const hollyfieldManor = { lat: 37.4419, lng: -77.6311 };
-
-            // Create the map
-            map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: hollyfieldManor,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                styles: [
-                    {
-                        featureType: "all",
-                        elementType: "geometry.fill",
-                        stylers: [{ color: "#fef7f7" }]
-                    },
-                    {
-                        featureType: "water",
-                        elementType: "geometry",
-                        stylers: [{ color: "#e9e9e9" }, { lightness: 17 }]
-                    },
-                    {
-                        featureType: "road",
-                        elementType: "geometry",
-                        stylers: [{ color: "#ffffff" }, { lightness: 10 }]
-                    }
-                ]
-            });
-
-            // Create a custom marker
-            marker = new google.maps.Marker({
-                position: hollyfieldManor,
-                map: map,
-                title: "Hollyfield Manor",
-                icon: {
-                    url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(`
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="20" cy="20" r="18" fill="#e11d48" stroke="white" stroke-width="4"/>
-                            <text x="20" y="26" text-anchor="middle" fill="white" font-size="16" font-family="Arial">♥</text>
-                        </svg>
-                    `),
-                    scaledSize: new google.maps.Size(40, 40),
-                    anchor: new google.maps.Point(20, 20)
-                }
-            });
-
-            // Create info window
-            const infoWindow = new google.maps.InfoWindow({
-                content: `
-                    <div style="padding: 10px; font-family: Arial, sans-serif;">
-                        <h3 style="margin: 0 0 10px 0; color: #e11d48;">Hollyfield Manor</h3>
-                        <p style="margin: 0 0 5px 0;"><strong>Address:</strong></p>
-                        <p style="margin: 0 0 10px 0;">2468 Manor Drive<br>Richmond, VA 23173</p>
-                        <p style="margin: 0 0 5px 0;"><strong>Wedding Date:</strong></p>
-                        <p style="margin: 0;">October 17, 2026</p>
-                    </div>
-                `
-            });
-
-            // Add click listener to marker
-            marker.addListener("click", () => {
-                infoWindow.open(map, marker);
-            });
-
-            // Open info window by default
-            infoWindow.open(map, marker);
-        }
-
-        // Initialize map when page loads
-        window.onload = function() {
-            // Load Google Maps API
-            const script = document.createElement('script');
-            script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
-            script.async = true;
-            script.defer = true;
-            document.head.appendChild(script);
-        };
-
-        // Fallback if Google Maps fails to load
-        setTimeout(function() {
-            if (!window.google) {
-                document.getElementById('map').innerHTML = `
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100%; background: #f3f4f6; color: #6b7280; text-align: center; padding: 2rem;">
-                        <div>
-                            <h3>Interactive Map</h3>
-                            <p>Hollyfield Manor<br>2468 Manor Drive<br>Richmond, VA 23173</p>
-                            <a href="https://maps.google.com/maps?q=Hollyfield+Manor,+Richmond,+VA" target="_blank" style="color: #e11d48; text-decoration: none;">
-                                View on Google Maps →
-                            </a>
-                        </div>
-                    </div>
-                `;
-            }
-        }, 3000);
-
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

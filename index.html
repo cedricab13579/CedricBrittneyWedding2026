@@ -11,14 +11,17 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-brand">B & C</div>
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="Images/BC Logo.png" alt="Brittney & Cedric Wedding Logo" class="nav-logo">
+                </a>
+            </div>
             <div class="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#story" class="nav-link">Our Story</a>
-                <a href="#details" class="nav-link">Details</a>
-                <a href="/venue" class="nav-link">Venue</a>
-                <a href="#rsvp" class="nav-link">RSVP</a>
-                <a href="#registry" class="nav-link">Registry</a>
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="venue.html" class="nav-link">Venue</a>
+                <a href="registry.html" class="nav-link">Registry</a>
+                <a href="rsvp.html" class="nav-link">RSVP</a>
             </div>
         </div>
     </nav>
@@ -27,24 +30,55 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=400&fit=crop" alt="Brittney and Cedric" />
+                <img src="images/backs.jpg" alt="Romantic forest path representing Brittney and Cedric's journey together" />
                 <div class="hero-overlay"></div>
                 <div class="hero-content">
-                    <h1 class="hero-title">
-                        Brittney <span class="hero-ampersand">&</span> Cedric
-                    </h1>
-                    <p class="hero-subtitle">are getting married!</p>
-                </div>
-            </div>
+                    <div class="hero-title-image">
+                        <img src="Images/Brittney and Cedric Text Hi Res.png" alt="Brittney and Cedric elegant script typography" class="title-image">
+                    </div>
+                    
+                    <div class="hero-info">
+                        <div class="hero-date">
+                            <span class="icon">📅</span>
+                            <span class="date-text">October 17, 2026</span>
+                        </div>
+                        <div class="hero-location">
+                            <span class="icon">📍</span>
+                            <span class="location-text">Hollyfield Manor</span>
+                        </div>
+                        <div class="hero-address">
+                            <span class="address-text">289 Hollyfield Ln Manquin</span>
+                        </div>
+                        <div class="hero-address">
+                            <span class="address-text">Richmond, VA 23106</span>
+                        </div>
+                    </div>
 
-            <div class="hero-info">
-                <div class="hero-date">
-                    <span class="icon">📅</span>
-                    <span class="date-text">October 17, 2026</span>
-                </div>
-                <div class="hero-location">
-                    <span class="icon">📍</span>
-                    <span class="location-text">Hollyfield Manor</span>
+                    <!-- Countdown Timer -->
+                    <div class="countdown-container">
+                        <div class="countdown-header">
+                            <h3 class="countdown-title">Counting Down to Our Special Day</h3>
+                            <p class="countdown-subtitle">October 17, 2026 at 3:00 PM</p>
+                        </div>
+                        <div class="countdown-grid" id="countdown">
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="days">--</div>
+                                <div class="countdown-label">Days</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="hours">--</div>
+                                <div class="countdown-label">Hours</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="minutes">--</div>
+                                <div class="countdown-label">Minutes</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="seconds">--</div>
+                                <div class="countdown-label">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,16 +95,16 @@
 
             <div class="story-content">
                 <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=400&fit=crop" alt="Brittney and Cedric together" />
+                    <img src="images/close_up.jpg" alt="Brittney and Cedric together" />
                 </div>
                 <div class="story-text">
                     <div class="story-section">
                         <h3>How We Met</h3>
-                        <p>We first crossed paths at a mutual friend's birthday party in the summer of 2022. Cedric was telling stories that had everyone laughing, and Brittney was captivated by his sense of humor and genuine warmth. What started as a conversation about our shared love of hiking turned into talking until sunrise.</p>
+                        <p>We've known each other for 17 years, stretching waaaaay back to third grade, where we were fast friends. It took Cedric only 8-ish more years to muster the courage, asking for a first date in December 2016, where our love story begins. From there we've been inseparable, through long distance in undergrad to living together as Brittney completes her doctorate.</p>
                     </div>
                     <div class="story-section">
                         <h3>The Proposal</h3>
-                        <p>On a crisp autumn morning in October 2024, Cedric surprised Brittney with a hike to their favorite overlook. As the sun painted the valley below in golden hues, he got down on one knee and asked her to be his adventure partner for life. Through happy tears, she said yes!</p>
+                        <p>In February 2025 after 8 years of dating, Cedric and Brittney were finally ready to take the next step in their lives together. After an exciting day of falconry on a gorgeous winter day, Cedric and Brittney came home to a warm home-cooked meal where through happy tears, she said yes!</p>
                     </div>
                 </div>
             </div>
@@ -94,15 +128,15 @@
                     <div class="card-content">
                         <div class="detail-item">
                             <strong>Date & Time</strong>
-                            <p>Saturday, October 17, 2026 at 4:00 PM</p>
+                            <p>Saturday, October 17, 2026 at 3:00 PM</p>
                         </div>
                         <div class="detail-item">
                             <strong>Location</strong>
-                            <p>Hollyfield Manor<br>2468 Manor Drive<br>Richmond, VA 23173</p>
+                            <p>Hollyfield Manor<br>289 Hollyfield Ln Manquin<br>Richmond, VA 23106</p>
                         </div>
                         <div class="detail-item">
                             <strong>Dress Code</strong>
-                            <p>Garden Party Attire</p>
+                            <p>Formal Attire</p>
                         </div>
                     </div>
                 </div>
@@ -115,7 +149,7 @@
                     <div class="card-content">
                         <div class="detail-item">
                             <strong>Time</strong>
-                            <p>6:00 PM - 11:00 PM</p>
+                            <p>5:00 PM - 11:00 PM</p>
                         </div>
                         <div class="detail-item">
                             <strong>Location</strong>
@@ -123,11 +157,11 @@
                         </div>
                         <div class="detail-item">
                             <strong>Dinner</strong>
-                            <p>Plated dinner with wine pairings</p>
+                            <p>Buffet style with open bar</p>
                         </div>
                         <div class="detail-item">
                             <strong>Dancing</strong>
-                            <p>Live band and DJ</p>
+                            <p>DJ and fireworks!</p>
                         </div>
                     </div>
                 </div>
@@ -137,35 +171,35 @@
                 <h3>Schedule of Events</h3>
                 <div class="schedule-grid">
                     <div class="schedule-item">
-                        <div class="schedule-time">3:30 PM</div>
+                        <div class="schedule-time">2:30 PM</div>
                         <div class="schedule-event">
                             <strong>Guest Arrival</strong>
                             <p>Welcome drinks & mingling</p>
                         </div>
                     </div>
                     <div class="schedule-item">
-                        <div class="schedule-time">4:00 PM</div>
+                        <div class="schedule-time">3:00 PM</div>
                         <div class="schedule-event">
                             <strong>Ceremony</strong>
                             <p>Exchange of vows</p>
                         </div>
                     </div>
                     <div class="schedule-item">
-                        <div class="schedule-time">4:30 PM</div>
+                        <div class="schedule-time">3:30 PM</div>
                         <div class="schedule-event">
                             <strong>Cocktail Hour</strong>
                             <p>Photos & appetizers</p>
                         </div>
                     </div>
                     <div class="schedule-item">
-                        <div class="schedule-time">6:00 PM</div>
+                        <div class="schedule-time">4:30 PM</div>
                         <div class="schedule-event">
                             <strong>Reception</strong>
                             <p>Dinner & toasts</p>
                         </div>
                     </div>
                     <div class="schedule-item">
-                        <div class="schedule-time">8:00 PM</div>
+                        <div class="schedule-time">7:00 PM</div>
                         <div class="schedule-event">
                             <strong>First Dance</strong>
                             <p>Let the dancing begin!</p>
@@ -191,52 +225,10 @@
                 <p class="section-subtitle">We can't wait to celebrate with you! Please respond by September 1, 2026.</p>
 
                 <div class="rsvp-form">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Will you be attending?</label>
-                            <div class="radio-group">
-                                <label class="radio-label">
-                                    <input type="radio" name="attending" value="yes" required>
-                                    Joyfully accepts
-                                </label>
-                                <label class="radio-label">
-                                    <input type="radio" name="attending" value="no" required>
-                                    Regretfully declines
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="guests">Number of Guests</label>
-                            <select id="guests" name="guests">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="dietary">Dietary Restrictions</label>
-                            <textarea id="dietary" name="dietary" rows="3" placeholder="Please let us know about any dietary restrictions or allergies"></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn">Send RSVP</button>
-                    </form>
+                    <h3>Ready to RSVP?</h3>
+                    <p>Please use our dedicated RSVP form to let us know if you'll be joining us for our special day.</p>
+                    <a href="rsvp.html" class="btn btn-primary">Complete RSVP Form</a>
+                    <p class="rsvp-deadline">RSVP deadline: September 1, 2026</p>
                 </div>
             </div>
         </div>
@@ -256,19 +248,19 @@
                     <div class="registry-icon">🎁</div>
                     <h3>Williams Sonoma</h3>
                     <p>Kitchen essentials and home goods</p>
-                    <a href="#" class="registry-btn">View Registry</a>
+                    <a href="registry.html" class="registry-btn">View Registry</a>
                 </div>
                 <div class="registry-card">
                     <div class="registry-icon">🎁</div>
                     <h3>Crate & Barrel</h3>
                     <p>Furniture and home decor</p>
-                    <a href="#" class="registry-btn">View Registry</a>
+                    <a href="registry.html" class="registry-btn">View Registry</a>
                 </div>
                 <div class="registry-card">
                     <div class="registry-icon">✈️</div>
                     <h3>Honeymoon Fund</h3>
                     <p>Help us explore Italy together</p>
-                    <a href="#" class="registry-btn">Contribute</a>
+                    <a href="registry.html" class="registry-btn">Contribute</a>
                 </div>
             </div>
         </div>
@@ -297,7 +289,7 @@
                         </div>
                         <div class="travel-item">
                             <strong>Transportation</strong>
-                            <p>Rental car recommended<br>Shuttle services available</p>
+                            <p>Rental car recommended<br>Uber/Lyft available</p>
                         </div>
                     </div>
                 </div>
@@ -319,69 +311,21 @@
         </div>
     </section>
 
-    <!-- Photo Gallery -->
-    <section class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-icon">📸</span>
-                <h2 class="section-title">Our Journey</h2>
-                <p class="section-subtitle">A few of our favorite moments together</p>
-            </div>
-
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300&h=300&fit=crop" alt="Memory 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=300&h=300&fit=crop" alt="Memory 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=300&h=300&fit=crop" alt="Memory 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=300&h=300&fit=crop" alt="Memory 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=300&h=300&fit=crop" alt="Memory 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=300&h=300&fit=crop" alt="Memory 6">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=300&h=300&fit=crop" alt="Memory 7">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=300&h=300&fit=crop" alt="Memory 8">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-header">
-                <h3>Brittney & Cedric</h3>
-                <p>October 17, 2026 • Hollyfield Manor</p>
-            </div>
-
-            <div class="footer-divider"></div>
-
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Questions about the wedding?</p>
-                    <p>Email: wedding@brittneyandcedric.com</p>
+                    <h4>Hollyfield Manor</h4>
+                    <p>289 Hollyfield Ln, Manquin<br>Richmond, VA 23106</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Important Dates</h4>
-                    <p>RSVP Deadline: September 1, 2026</p>
-                    <p>Wedding Day: October 17, 2026</p>
+                    <h4>Wedding Information</h4>
+                    <p>Brittney & Cedric's Wedding<br>October 17, 2026</p>
+                    <a href="index.html" class="footer-link">Back to Wedding Website</a>
                 </div>
-                <div class="footer-section">
-                    <h4>Follow Our Journey</h4>
-                    <p>Use #BrittneyAndCedric2026</p>
-                    <p>on social media</p>
+                <div class="footer-section footer-logo">
+                    <img src="Images/BC Logo.png" alt="Brittney & Cedric Wedding Logo" class="footer-logo-img">
                 </div>
             </div>
 
@@ -392,6 +336,39 @@
     </footer>
 
     <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const weddingDate = new Date("2026-10-17T15:00:00").getTime();
+            const now = new Date().getTime();
+            const difference = weddingDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((difference / 1000 / 60) % 60);
+                const seconds = Math.floor((difference / 1000) % 60);
+
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+                // Update labels for singular/plural
+                document.querySelector('#countdown .countdown-item:nth-child(1) .countdown-label').textContent = days === 1 ? 'Day' : 'Days';
+                document.querySelector('#countdown .countdown-item:nth-child(2) .countdown-label').textContent = hours === 1 ? 'Hour' : 'Hours';
+                document.querySelector('#countdown .countdown-item:nth-child(3) .countdown-label').textContent = minutes === 1 ? 'Minute' : 'Minutes';
+                document.querySelector('#countdown .countdown-item:nth-child(4) .countdown-label').textContent = seconds === 1 ? 'Second' : 'Seconds';
+            } else {
+                document.querySelector('.countdown-header .countdown-title').textContent = "We're Married!";
+                document.querySelector('.countdown-header .countdown-subtitle').textContent = "Thank you for celebrating with us!";
+                document.getElementById('countdown').innerHTML = '<div class="wedding-complete"><div class="celebration-icon">💒💕</div><p>Brittney & Cedric are now married!</p></div>';
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -406,10 +383,26 @@
             });
         });
 
-        // Form submission handler
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your RSVP! We will be in touch soon.');
+        // Active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
