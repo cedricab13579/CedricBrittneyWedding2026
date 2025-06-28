@@ -13,7 +13,7 @@
         <div class="nav-container">
             <div class="nav-brand">
                 <a href="index.html">
-                    <img src="Images/BC Logo.png" alt="Brittney & Cedric Wedding Logo" class="nav-logo">
+                    <img src="Images/BC Logo.png" alt="Brittney & Cedric Wedding Logo - Elegant floral design with BC monogram and October 17th 2026" class="nav-logo">
                 </a>
             </div>
             <div class="nav-menu">
@@ -38,95 +38,386 @@
         </div>
     </section>
 
+    <!-- Category Filter -->
+    <section class="faq-filter-section">
+        <div class="container">
+            <div class="faq-filter-container">
+                <button class="faq-filter-btn active" onclick="filterFAQ('All')">All Questions</button>
+                <button class="faq-filter-btn" onclick="filterFAQ('Venue & Location')">
+                    <span class="filter-icon">📍</span>
+                    Venue & Location
+                </button>
+                <button class="faq-filter-btn" onclick="filterFAQ('Wedding Day Logistics')">
+                    <span class="filter-icon">📅</span>
+                    Wedding Day Logistics
+                </button>
+                <button class="faq-filter-btn" onclick="filterFAQ('Food & Beverages')">
+                    <span class="filter-icon">👥</span>
+                    Food & Beverages
+                </button>
+                <button class="faq-filter-btn" onclick="filterFAQ('RSVP & Gifts')">
+                    <span class="filter-icon">🎁</span>
+                    RSVP & Gifts
+                </button>
+                <button class="faq-filter-btn" onclick="filterFAQ('Photography & Social Media')">
+                    <span class="filter-icon">📷</span>
+                    Photography & Social Media
+                </button>
+                <button class="faq-filter-btn" onclick="filterFAQ('Children & Special Needs')">
+                    <span class="filter-icon">👥</span>
+                    Children & Special Needs
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ Content -->
     <section class="faq-content">
         <div class="container">
             <div class="faq-list">
-                <div class="faq-item">
+                <!-- Venue & Location -->
+                <div class="faq-item" data-category="Venue & Location">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span class="faq-category">Venue & Location</span>
-                        <h3>Where exactly is Hollyfield Manor located?</h3>
-                        <span class="faq-toggle">+</span>
+                        <div class="faq-question-content">
+                            <span class="faq-category">Venue & Location</span>
+                            <h3>Where exactly is Hollyfield Manor located?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
                     </button>
                     <div class="faq-answer">
-                        <p>Hollyfield Manor is located at 289 Hollyfield Ln, Manquin, Richmond, VA 23106. It's about 30 minutes from Richmond International Airport and easily accessible via major highways.</p>
+                        <p>Hollyfield Manor is located at 2468 Manor Drive, Richmond, VA 23173. It's about 30 minutes from Richmond International Airport and easily accessible via major highways.</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="Venue & Location">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span class="faq-category">Venue & Location</span>
-                        <h3>Is there parking available at the venue?</h3>
-                        <span class="faq-toggle">+</span>
+                        <div class="faq-question-content">
+                            <span class="faq-category">Venue & Location</span>
+                            <h3>Is there parking available at the venue?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
                     </button>
                     <div class="faq-answer">
                         <p>Yes! Hollyfield Manor provides ample complimentary parking for all wedding guests. The parking area is well-lit and just a short walk from the ceremony and reception areas.</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="Venue & Location">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span class="faq-category">Wedding Day Logistics</span>
-                        <h3>What time should I arrive?</h3>
-                        <span class="faq-toggle">+</span>
+                        <div class="faq-question-content">
+                            <span class="faq-category">Venue & Location</span>
+                            <h3>Is the venue wheelchair accessible?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, Hollyfield Manor is fully wheelchair accessible. There are ramps available for the ceremony area, and the reception spaces are all on the ground level with accessible restrooms.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="Venue & Location">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">Venue & Location</span>
+                            <h3>What happens if it rains on the wedding day?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Don't worry! Hollyfield Manor has a beautiful indoor ceremony space that can accommodate the entire ceremony if needed. The reception will be held indoors in the elegant ballroom, so weather won't affect the celebration.</p>
+                    </div>
+                </div>
+
+                <!-- Wedding Day Logistics -->
+                <div class="faq-item" data-category="Wedding Day Logistics">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">Wedding Day Logistics</span>
+                            <h3>What time should I arrive?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
                     </button>
                     <div class="faq-answer">
                         <p>Please plan to arrive by 2:30 PM for welcome drinks and mingling. The ceremony will begin promptly at 3:00 PM. We recommend arriving a few minutes early to find parking and get settled.</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="Wedding Day Logistics">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span class="faq-category">Wedding Day Logistics</span>
-                        <h3>What is the dress code?</h3>
-                        <span class="faq-toggle">+</span>
+                        <div class="faq-question-content">
+                            <span class="faq-category">Wedding Day Logistics</span>
+                            <h3>What is the dress code?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
                     </button>
                     <div class="faq-answer">
-                        <p>The dress code is Formal Attire. Think elegant and comfortable - cocktail dresses, suits, or formal wear work perfectly. Ladies may want to consider comfortable shoes for the outdoor ceremony on the lawn.</p>
+                        <p>Dress to impress—formal attire is the vibe! Suits, ties, tuxes, long dresses, or cocktail dresses are all great choices. The ceremony will be outdoors in the beautiful fall weather, so do not forget to bring a stylish jacket or cozy wrap just in case the breeze joins us too!</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="Wedding Day Logistics">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span class="faq-category">Travel & Accommodations</span>
-                        <h3>Where should out-of-town guests stay?</h3>
-                        <span class="faq-toggle">+</span>
+                        <div class="faq-question-content">
+                            <span class="faq-category">Wedding Day Logistics</span>
+                            <h3>How long will the ceremony and reception last?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
                     </button>
                     <div class="faq-answer">
-                        <p>We recommend The Jefferson Hotel, Omni Richmond Hotel, or Linden Row Inn. We have group rates available at select hotels - mention 'Johnson-Williams Wedding at Hollyfield Manor' when booking.</p>
+                        <p>The ceremony will be about 30 minutes, followed by cocktail hour from 3:30-4:30 PM. The reception runs from 5:00-11:00 PM, ending with a sparkler send-off.</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="Wedding Day Logistics">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span class="faq-category">Food & Beverages</span>
-                        <h3>What type of food will be served?</h3>
-                        <span class="faq-toggle">+</span>
+                        <div class="faq-question-content">
+                            <span class="faq-category">Wedding Day Logistics</span>
+                            <h3>Will there be assigned seating?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
                     </button>
                     <div class="faq-answer">
-                        <p>We'll be serving a buffet dinner with open bar, featuring seasonal ingredients and both meat and vegetarian options. Cocktail hour will include passed hors d'oeuvres and signature cocktails.</p>
+                        <p>Ceremony seating is open - feel free to sit anywhere! For the reception dinner, we'll have assigned tables to help everyone mingle and meet new friends. Your table assignment will be at the welcome table.</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="Wedding Day Logistics">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span class="faq-category">RSVP & Gifts</span>
-                        <h3>When do I need to RSVP by?</h3>
-                        <span class="faq-toggle">+</span>
+                        <div class="faq-question-content">
+                            <span class="faq-category">Wedding Day Logistics</span>
+                            <h3>Is transportation provided to/from hotels?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While we don't provide shuttle service, rideshare services like Uber and Lyft are readily available in Richmond. We also recommend renting a car if you plan to explore the area.</p>
+                    </div>
+                </div>
+
+                <!-- Food & Beverages -->
+                <div class="faq-item" data-category="Food & Beverages">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">Food & Beverages</span>
+                            <h3>What type of food will be served?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Come hungry—we have got you covered! Dinner will be served upscale buffet-style with two delicious main courses and a variety of tasty sides. During the cocktail hour, we will have a selection of hors d'oeuvres to nibble on, and later in the evening, while we are all dancing the night away, late-night finger foods will make an appearance. It is going to be a feast!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="Food & Beverages">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">Food & Beverages</span>
+                            <h3>Can dietary restrictions be accommodated?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Please let us know about any dietary restrictions or food allergies when you RSVP. Our caterers can accommodate vegetarian, vegan, gluten-free, and other dietary needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="Food & Beverages">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">Food & Beverages</span>
+                            <h3>Will there be an open bar?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We'll have a full open bar throughout cocktail hour and the reception, featuring wine, beer, signature cocktails, and standard spirits.</p>
+                    </div>
+                </div>
+
+                <!-- RSVP & Gifts -->
+                <div class="faq-item" data-category="RSVP & Gifts">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">RSVP & Gifts</span>
+                            <h3>When do I need to RSVP by?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
                     </button>
                     <div class="faq-answer">
                         <p>Please RSVP by September 1, 2026. You can RSVP through our website or contact us directly if you have any issues with the online form.</p>
                     </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" data-category="RSVP & Gifts">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span class="faq-category">Photography & Social Media</span>
-                        <h3>Can I take photos during the ceremony?</h3>
-                        <span class="faq-toggle">+</span>
+                        <div class="faq-question-content">
+                            <span class="faq-category">RSVP & Gifts</span>
+                            <h3>Can I bring a plus-one?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Plus-ones are by invitation only due to venue capacity. Your invitation will specify if you're invited with a guest. If you have questions about your invitation, please contact us directly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="RSVP & Gifts">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">RSVP & Gifts</span>
+                            <h3>Where are you registered?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We're registered at Williams Sonoma, Crate & Barrel, and have a honeymoon fund for our trip to Italy. You can find links to all our registries on our website. Your presence is the greatest gift!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="RSVP & Gifts">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">RSVP & Gifts</span>
+                            <h3>Should I bring my gift to the wedding?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While we appreciate your thoughtfulness, we recommend having gifts shipped directly to our home or purchasing from our online registries. If you do bring a gift, there will be a designated gift table at the reception.</p>
+                    </div>
+                </div>
+
+                <!-- Photography & Social Media -->
+                <div class="faq-item" data-category="Photography & Social Media">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">Photography & Social Media</span>
+                            <h3>Can I take photos during the ceremony?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
                     </button>
                     <div class="faq-answer">
                         <p>We're having an unplugged ceremony, so please keep phones and cameras put away during the vows. Our professional photographer will capture everything! Feel free to take photos during cocktail hour and reception.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="Photography & Social Media">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">Photography & Social Media</span>
+                            <h3>Will you share professional photos with guests?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We'll create a shared album with highlights from our professional photos that all guests can access. We'll send the link out a few weeks after the wedding.</p>
+                    </div>
+                </div>
+
+                <!-- Children & Special Needs -->
+                <div class="faq-item" data-category="Children & Special Needs">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">Children & Special Needs</span>
+                            <h3>Are children welcome at the wedding?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We love your little ones, but our wedding will be an adults-only celebration. We hope this gives you a chance to enjoy a night off, relax, and celebrate with us! Thank you for understanding.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="Children & Special Needs">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <div class="faq-question-content">
+                            <span class="faq-category">Children & Special Needs</span>
+                            <h3>Is there a quiet space available if needed?</h3>
+                        </div>
+                        <span class="faq-toggle">
+                            <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, Hollyfield Manor has several quiet parlor rooms that can be used if anyone needs a break from the festivities or a quiet space.</p>
                     </div>
                 </div>
             </div>
@@ -139,24 +430,12 @@
             <h2 class="section-title">Still Have Questions?</h2>
             <p class="section-subtitle">We're here to help! Don't hesitate to reach out if you need any additional information.</p>
             
-            <div class="contact-grid">
+            <div class="contact-grid-single">
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
                     <h3>Email Us</h3>
                     <p>For general questions</p>
                     <a href="mailto:wedding@brittneyandcedric.com">wedding@brittneyandcedric.com</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📞</div>
-                    <h3>Call the Venue</h3>
-                    <p>For venue-specific questions</p>
-                    <a href="tel:804-555-MANOR">(804) 555-MANOR</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">💬</div>
-                    <h3>Wedding Day</h3>
-                    <p>Emergency contact info will be provided to all guests</p>
-                    <span>Day-of coordinator available</span>
                 </div>
             </div>
         </div>
@@ -168,7 +447,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Hollyfield Manor</h4>
-                    <p>289 Hollyfield Ln, Manquin<br>Richmond, VA 23106</p>
+                    <p>289 Hollyfield Ln<br>Manquin, VA 23106</p>
                 </div>
                 <div class="footer-section">
                     <h4>Wedding Information</h4>
@@ -184,30 +463,51 @@
     </footer>
 
     <script>
+        let openItems = [];
+        let selectedCategory = 'All';
+
         function toggleFAQ(button) {
             const faqItem = button.parentElement;
             const answer = faqItem.querySelector('.faq-answer');
-            const toggle = button.querySelector('.faq-toggle');
+            const chevron = button.querySelector('.faq-chevron');
+            const isOpen = faqItem.classList.contains('active');
             
-            // Close all other FAQ items
-            document.querySelectorAll('.faq-item').forEach(item => {
-                if (item !== faqItem) {
+            if (isOpen) {
+                faqItem.classList.remove('active');
+                answer.style.maxHeight = null;
+                chevron.style.transform = 'rotate(0deg)';
+            } else {
+                faqItem.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                chevron.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        function filterFAQ(category) {
+            selectedCategory = category;
+            
+            // Update filter buttons
+            document.querySelectorAll('.faq-filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Filter FAQ items
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                if (category === 'All' || itemCategory === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                    // Close if open
                     item.classList.remove('active');
-                    item.querySelector('.faq-answer').style.maxHeight = null;
-                    item.querySelector('.faq-toggle').textContent = '+';
+                    const answer = item.querySelector('.faq-answer');
+                    const chevron = item.querySelector('.faq-chevron');
+                    answer.style.maxHeight = null;
+                    chevron.style.transform = 'rotate(0deg)';
                 }
             });
-            
-            // Toggle current item
-            faqItem.classList.toggle('active');
-            
-            if (faqItem.classList.contains('active')) {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-                toggle.textContent = '−';
-            } else {
-                answer.style.maxHeight = null;
-                toggle.textContent = '+';
-            }
         }
     </script>
 </body>

@@ -728,6 +728,48 @@ h4 {
   margin-top: 2rem;
 }
 
+/* FAQ Filter Section */
+.faq-filter-section {
+  padding: 2rem 1rem;
+}
+
+.faq-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.faq-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid #c3cfa0;
+  background: white;
+  color: #5b7b7a;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.faq-filter-btn:hover {
+  background: #f7e1d3;
+}
+
+.faq-filter-btn.active {
+  background: #5b7b7a;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-icon {
+  font-size: 1rem;
+}
+
 /* FAQ Styles */
 .faq-content {
   padding: 2rem 1rem 5rem;
@@ -743,7 +785,7 @@ h4 {
 
 .faq-item {
   background: white;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border: 1px solid #c3cfa0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   overflow: hidden;
@@ -771,6 +813,11 @@ h4 {
   background: #f7e1d3;
 }
 
+.faq-question-content {
+  flex: 1;
+  padding-right: 1rem;
+}
+
 .faq-category {
   font-size: 0.875rem;
   color: #5b7b7a;
@@ -784,14 +831,15 @@ h4 {
   font-weight: 600;
   color: #374151;
   margin: 0;
-  padding-right: 1rem;
 }
 
 .faq-toggle {
-  font-size: 1.5rem;
-  color: #5b7b7a;
-  font-weight: bold;
   flex-shrink: 0;
+  color: #5b7b7a;
+}
+
+.faq-chevron {
+  transition: transform 0.3s ease;
 }
 
 .faq-answer {
@@ -825,12 +873,19 @@ h4 {
   margin-top: 3rem;
 }
 
+.contact-grid-single {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 .contact-card {
   background: #f7e1d3;
-  border-radius: 1rem;
+  border-radius: 2rem;
   padding: 1.5rem;
   text-align: center;
   color: #374151;
+  max-width: 400px;
 }
 
 .contact-icon {
@@ -842,11 +897,12 @@ h4 {
   font-weight: 600;
   color: #374151;
   margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 
 .contact-card p {
   color: #6b7280;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   margin-bottom: 0.75rem;
 }
 
@@ -854,6 +910,7 @@ h4 {
   color: #5b7b7a;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1.125rem;
 }
 
 .contact-card a:hover {
@@ -1692,139 +1749,6 @@ h4 {
   gap: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  }
-
-  .hero-title {
-    font-size: 3rem;
-  }
-
-  .title-image {
-    max-width: 90vw;
-  }
-
-  .countdown-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .story-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .details-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .schedule-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .registry-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .travel-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .venue-about-content {
-    grid-template-columns: 1fr;
-  }
-
-  .location-content {
-    grid-template-columns: 1fr;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .categories-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .tips-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .radio-group {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .thank-you-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .venue-hero-title {
-    font-size: 2.5rem;
-  }
-
-  .page-title {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .schedule-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .countdown-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-  }
-
-  .countdown-number {
-    font-size: 1.5rem;
-    padding: 0.75rem;
-  }
-
-  .venue-hero-title {
-    font-size: 2rem;
-  }
-
-  .page-title {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .nav-menu {
-    gap: 1rem;
-  }
-
-  .nav-link {
-    font-size: 0.9rem;
-  }
-}
-
 /* Menu Page Styles */
 .menu-hero {
   padding: 8rem 1rem 4rem;
@@ -2254,8 +2178,107 @@ h4 {
   text-align: center;
 }
 
-/* Responsive Design for Menu */
+/* Responsive Design */
 @media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .title-image {
+    max-width: 90vw;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .registry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .venue-about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .location-content {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .thank-you-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .venue-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .faq-filter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-filter-btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
   .menu-features-grid {
     grid-template-columns: 1fr;
   }
@@ -2286,6 +2309,36 @@ h4 {
 }
 
 @media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .countdown-number {
+    font-size: 1.5rem;
+    padding: 0.75rem;
+  }
+
+  .venue-hero-title {
+    font-size: 2rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
   .menu-desserts-grid {
     grid-template-columns: 1fr;
   }
@@ -2296,5 +2349,15 @@ h4 {
 
   .menu-section-title {
     font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-menu {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
   }
 }

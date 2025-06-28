@@ -5,7 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Calendar, Users, Utensils, Wine, CheckCircle, AlertCircle } from "lucide-react"
+import { Calendar, Users, Utensils, Wine, CheckCircle, AlertCircle, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -26,13 +26,41 @@ export default function RSVPPage() {
     dietaryRestrictions: "",
     songRequest: "",
     additionalComments: "",
+    additionalGuests: [] as Array<{ firstName: string; lastName: string }>,
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isDeclined, setIsDeclined] = useState(false)
   const [errors, setErrors] = useState<Record<string, string>>({})
 
+  const handleAdditionalGuestChange = (index: number, field: "firstName" | "lastName", value: string) => {
+    setFormData((prev) => {
+      const newAdditionalGuests = [...prev.additionalGuests]
+      if (!newAdditionalGuests[index]) {
+        newAdditionalGuests[index] = { firstName: "", lastName: "" }
+      }
+      newAdditionalGuests[index][field] = value
+      return { ...prev, additionalGuests: newAdditionalGuests }
+    })
+  }
+
   const handleInputChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }))
+    setFormData((prev) => {
+      const updated = { ...prev, [field]: value }
+
+      // Handle additional guests when guest count changes
+      if (field === "guestCount") {
+        const guestCount = Number.parseInt(value) || 0
+        const additionalGuestCount = Math.max(0, guestCount - 1)
+        const newAdditionalGuests = Array(additionalGuestCount)
+          .fill(null)
+          .map((_, index) => prev.additionalGuests[index] || { firstName: "", lastName: "" })
+        updated.additionalGuests = newAdditionalGuests
+      }
+
+      return updated
+    })
+
     // Clear error when user starts typing
     if (errors[field]) {
       setErrors((prev) => ({ ...prev, [field]: "" }))
@@ -58,6 +86,16 @@ export default function RSVPPage() {
       if (alcoholCount > guestCount) {
         newErrors.alcoholCount = "Cannot exceed total number of guests"
       }
+
+      // Validate additional guests
+      formData.additionalGuests.forEach((guest, index) => {
+        if (!guest.firstName.trim()) {
+          newErrors[`additionalGuest${index}FirstName`] = `Guest ${index + 2} first name is required`
+        }
+        if (!guest.lastName.trim()) {
+          newErrors[`additionalGuest${index}LastName`] = `Guest ${index + 2} last name is required`
+        }
+      })
     }
 
     setErrors(newErrors)
@@ -75,7 +113,110 @@ export default function RSVPPage() {
     await new Promise((resolve) => setTimeout(resolve, 2000))
 
     setIsSubmitting(false)
-    setIsSubmitted(true)
+
+    // Check if user declined
+    if (formData.attending === "no") {
+      setIsDeclined(true)
+    } else {
+      setIsSubmitted(true)
+    }
+  }
+
+  if (isDeclined) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-wedding-blush to-white">
+        {/* Navigation */}
+        <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-wedding-sage py-4">
+          <div className="max-w-6xl mx-auto px-4 py-0">
+            <div className="flex justify-between items-center">
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="/Images/BC-Logo.png"
+                  alt="Brittney & Cedric Wedding Logo"
+                  width={80}
+                  height={80}
+                  sizes="80px"
+                  className="hover:scale-105 transition-transform duration-300"
+                  priority
+                />
+              </Link>
+              <div className="hidden md:flex space-x-8">
+                <Link href="/" className="text-wedding-teal hover:text-wedding-forest transition-colors font-medium">
+                  Home
+                </Link>
+                <Link
+                  href="/menu"
+                  className="text-wedding-teal hover:text-wedding-forest transition-colors font-medium"
+                >
+                  Menu
+                </Link>
+                <Link
+                  href="/venue"
+                  className="text-wedding-teal hover:text-wedding-forest transition-colors font-medium"
+                >
+                  Venue
+                </Link>
+                <Link
+                  href="/registry"
+                  className="text-wedding-teal hover:text-wedding-forest transition-colors font-medium"
+                >
+                  Registry
+                </Link>
+                <Link href="/faq" className="text-wedding-teal hover:text-wedding-forest transition-colors font-medium">
+                  FAQ
+                </Link>
+                <Link
+                  href="/rsvp"
+                  className="text-wedding-teal hover:text-wedding-forest transition-colors font-medium border-b-2 border-wedding-sage"
+                >
+                  RSVP
+                </Link>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        {/* Decline Message */}
+        <div className="pt-32 pb-20 px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="bg-white rounded-3xl p-12 shadow-xl border border-wedding-sage">
+              <Heart className="w-20 h-20 text-wedding-peach mx-auto mb-6" />
+              <h1 className="text-4xl font-serif text-wedding-forest mb-4">We'll Miss You</h1>
+              <p className="text-xl text-gray-600 mb-6">
+                Thank you for letting us know. While we're sad you can't join us on our special day, we completely
+                understand.
+              </p>
+
+              <div className="bg-wedding-blush rounded-2xl p-6 mb-8">
+                <h3 className="text-lg font-semibold text-wedding-forest mb-3">You're Still Part of Our Story</h3>
+                <div className="space-y-2 text-sm text-gray-700">
+                  <p>• We'll be thinking of you on October 17th</p>
+                  <p>• Follow #BrittneyAndCedric2026 for wedding updates and photos</p>
+                  <p>• We'd love to celebrate with you another time soon</p>
+                  <p>• Thank you for being such an important part of our lives</p>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link href="/">
+                  <Button className="bg-wedding-teal hover:bg-wedding-forest text-white">
+                    Back to Wedding Website
+                  </Button>
+                </Link>
+                <Link href="/registry">
+                  <Button
+                    variant="outline"
+                    className="border-wedding-sage text-wedding-teal hover:bg-wedding-blush bg-transparent"
+                  >
+                    View Our Registry
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
   }
 
   if (isSubmitted) {
@@ -159,7 +300,10 @@ export default function RSVPPage() {
                   </Button>
                 </Link>
                 <Link href="/venue">
-                  <Button variant="outline" className="border-wedding-sage text-wedding-teal hover:bg-wedding-blush">
+                  <Button
+                    variant="outline"
+                    className="border-wedding-sage text-wedding-teal hover:bg-wedding-blush bg-transparent"
+                  >
                     View Venue Details
                   </Button>
                 </Link>
@@ -423,6 +567,55 @@ export default function RSVPPage() {
                         </p>
                       </div>
                     </div>
+
+                    {formData.guestCount && Number.parseInt(formData.guestCount) > 1 && (
+                      <div className="space-y-4">
+                        <h4 className="text-lg font-serif text-wedding-forest">Additional Guest Information</h4>
+                        {formData.additionalGuests.map((guest, index) => (
+                          <div key={index} className="p-4 bg-white rounded-xl border border-wedding-sage">
+                            <h5 className="text-md font-medium text-wedding-forest mb-3">Guest {index + 2}</h5>
+                            <div className="grid md:grid-cols-2 gap-4">
+                              <div>
+                                <Label htmlFor={`additionalFirstName${index}`} className="text-gray-700 font-medium">
+                                  First Name *
+                                </Label>
+                                <Input
+                                  id={`additionalFirstName${index}`}
+                                  value={guest.firstName}
+                                  onChange={(e) => handleAdditionalGuestChange(index, "firstName", e.target.value)}
+                                  className={`mt-1 ${errors[`additionalGuest${index}FirstName`] ? "border-red-500" : "border-wedding-sage"} focus:ring-wedding-teal`}
+                                  placeholder="First name"
+                                />
+                                {errors[`additionalGuest${index}FirstName`] && (
+                                  <p className="text-red-500 text-sm mt-1 flex items-center gap-1">
+                                    <AlertCircle className="w-4 h-4" />
+                                    {errors[`additionalGuest${index}FirstName`]}
+                                  </p>
+                                )}
+                              </div>
+                              <div>
+                                <Label htmlFor={`additionalLastName${index}`} className="text-gray-700 font-medium">
+                                  Last Name *
+                                </Label>
+                                <Input
+                                  id={`additionalLastName${index}`}
+                                  value={guest.lastName}
+                                  onChange={(e) => handleAdditionalGuestChange(index, "lastName", e.target.value)}
+                                  className={`mt-1 ${errors[`additionalGuest${index}LastName`] ? "border-red-500" : "border-wedding-sage"} focus:ring-wedding-teal`}
+                                  placeholder="Last name"
+                                />
+                                {errors[`additionalGuest${index}LastName`] && (
+                                  <p className="text-red-500 text-sm mt-1 flex items-center gap-1">
+                                    <AlertCircle className="w-4 h-4" />
+                                    {errors[`additionalGuest${index}LastName`]}
+                                  </p>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
 
                     <div>
                       <Label
