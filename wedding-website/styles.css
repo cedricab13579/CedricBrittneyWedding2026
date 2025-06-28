@@ -299,12 +299,12 @@ h4 {
 
 .story-section h3 {
   font-size: 2rem;
-  color: #9f1239;
+  color: #5d7b7b;
   margin-bottom: 0.75rem;
 }
 
 .story-section p {
-  color: #374151;
+  color: #5d7b7b;
   line-height: 1.7;
 }
 
@@ -363,7 +363,7 @@ h4 {
 
 .detail-item strong {
   display: block;
-  color: #1f2937;
+  color: #5d7b7b;
   margin-bottom: 0.25rem;
 }
 
@@ -395,6 +395,7 @@ h4 {
 
 .schedule-item {
   text-align: center;
+  color: #5d7b7b;
 }
 
 .schedule-time {
@@ -546,7 +547,7 @@ h4 {
 }
 
 .travel-card h3 {
-  color: #9f1239;
+  color: #5d7b7b;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -561,12 +562,12 @@ h4 {
 
 .travel-item strong {
   display: block;
-  color: #1f2937;
+  color: #5d7b7b;
   margin-bottom: 0.25rem;
 }
 
 .travel-item p {
-  color: #6b7280;
+  color: #5d7b7b;
 }
 
 /* Footer */
