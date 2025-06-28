@@ -94,7 +94,7 @@ h4 {
 }
 
 .nav-link {
-  color: #be185d;
+  color: #6b7280;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -103,8 +103,8 @@ h4 {
 
 .nav-link:hover,
 .nav-link.active {
-  color: #9f1239;
-  border-bottom: 2px solid #9f1239;
+  color: #6b7280;
+  border-bottom: 2px solid #6b7280;
 }
 
 /* Hero Section */
