@@ -8,7 +8,7 @@
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
-  color: #333366;
+  color: #374151;
   background: #ffffff;
 }
 
@@ -28,7 +28,7 @@ h4 {
 
 .section-title {
   font-size: 3rem;
-  color: #006633;
+  color: #064e3b;
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: 600;
@@ -37,7 +37,7 @@ h4 {
 .intro-text {
   font-size: 1.25rem;
   line-height: 1.8;
-  color: #336666;
+  color: #4b5563;
   text-align: center;
   margin-bottom: 3rem;
   font-weight: 400;
@@ -54,7 +54,7 @@ h4 {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   z-index: 1000;
-  border-bottom: 1px solid #ccffcc;
+  border-bottom: 1px solid #d1fae5;
   padding: 1rem 0;
 }
 
@@ -86,7 +86,7 @@ h4 {
 }
 
 .nav-link {
-  color: #006666;
+  color: #0f766e;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -94,12 +94,12 @@ h4 {
 }
 
 .nav-link:hover {
-  color: #006633;
+  color: #064e3b;
 }
 
 .nav-link.active {
-  color: #006666;
-  border-bottom: 2px solid #ccffcc;
+  color: #0f766e;
+  border-bottom: 2px solid #d1fae5;
   padding-bottom: 0.25rem;
 }
 
@@ -194,7 +194,7 @@ h4 {
 /* About Section */
 .about {
   padding: 5rem 1rem;
-  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  background: linear-gradient(to bottom, #fdf2f8, #ffffff);
 }
 
 .about-content {
@@ -220,14 +220,14 @@ h4 {
 }
 
 .column h3 {
-  color: #006633;
+  color: #064e3b;
   font-size: 1.875rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .column p {
-  color: #336666;
+  color: #4b5563;
   line-height: 1.7;
   font-size: 1.125rem;
 }
@@ -238,11 +238,11 @@ h4 {
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border: 1px solid #ccffcc;
+  border: 1px solid #d1fae5;
 }
 
 .features-title {
-  color: #006633;
+  color: #064e3b;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -258,7 +258,7 @@ h4 {
 .feature-item {
   text-align: center;
   padding: 1.5rem;
-  background: #ffffff;
+  background: #fdf2f8;
   border-radius: 0.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -274,14 +274,14 @@ h4 {
 }
 
 .feature-item h4 {
-  color: #006633;
+  color: #064e3b;
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
 .feature-item p {
-  color: #666699;
+  color: #6b7280;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -289,7 +289,7 @@ h4 {
 /* Location Section */
 .location {
   padding: 5rem 1rem;
-  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  background: linear-gradient(to bottom, #ffffff, #fdf2f8);
 }
 
 .location-content {
@@ -309,10 +309,10 @@ h4 {
 
 .address-card,
 .directions-card {
-  background: #ffffff;
+  background: #fdf2f8;
   padding: 2rem;
   border-radius: 1rem;
-  border: 1px solid #ccffcc;
+  border: 1px solid #d1fae5;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -324,7 +324,7 @@ h4 {
 
 .address-card h3,
 .directions-card h3 {
-  color: #006633;
+  color: #064e3b;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -333,7 +333,7 @@ h4 {
 
 .address-card p,
 .directions-card p {
-  color: #336666;
+  color: #4b5563;
   line-height: 1.6;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -346,7 +346,7 @@ h4 {
 
 .btn-primary {
   display: inline-block;
-  background: #006666;
+  background: #0f766e;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
@@ -357,7 +357,7 @@ h4 {
 }
 
 .btn-primary:hover {
-  background: #006633;
+  background: #064e3b;
 }
 
 /* Map Container */
@@ -370,26 +370,26 @@ h4 {
   background: white;
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccffcc;
+  border: 1px solid #d1fae5;
   overflow: hidden;
 }
 
 .map-header {
   padding: 1.5rem;
-  background: #ffffff;
-  border-bottom: 1px solid #ccffcc;
+  background: #fdf2f8;
+  border-bottom: 1px solid #d1fae5;
   text-align: center;
 }
 
 .map-header h3 {
-  color: #006633;
+  color: #064e3b;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .map-header p {
-  color: #666699;
+  color: #6b7280;
 }
 
 .google-map-container {
@@ -415,7 +415,7 @@ h4 {
   border-radius: 0.5rem;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccffcc;
+  border: 1px solid #d1fae5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -423,25 +423,25 @@ h4 {
 
 .wedding-details h4 {
   font-weight: 600;
-  color: #333366;
+  color: #374151;
   font-size: 0.875rem;
 }
 
 .wedding-details p {
-  color: #666699;
+  color: #6b7280;
   font-size: 0.75rem;
 }
 
 .wedding-icon {
   font-size: 2rem;
-  color: #006666;
+  color: #0f766e;
 }
 
 .map-actions {
   padding: 1rem;
   margin: 5px;
-  background: #ffffff;
-  border-top: 1px solid #ccffff;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -463,30 +463,30 @@ h4 {
 }
 
 .google-maps {
-  background: #3366cc;
+  background: #1d4ed8;
   color: white;
 }
 
 .google-maps:hover {
-  background: #333399;
+  background: #1e40af;
 }
 
 .apple-maps {
-  background: #333366;
+  background: #374151;
   color: white;
 }
 
 .apple-maps:hover {
-  background: #000033;
+  background: #111827;
 }
 
 .share-btn {
-  background: #006666;
+  background: #0f766e;
   color: white;
 }
 
 .share-btn:hover {
-  background: #006633;
+  background: #064e3b;
 }
 
 .weather-info {
@@ -494,7 +494,7 @@ h4 {
   background: rgba(15, 118, 110, 0.2);
   border-radius: 1rem;
   padding: 1.5rem;
-  border: 1px solid #006666;
+  border: 1px solid #0f766e;
 }
 
 .weather-header {
@@ -507,7 +507,7 @@ h4 {
 .weather-icon {
   width: 2.5rem;
   height: 2.5rem;
-  background: #006666;
+  background: #0f766e;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -516,20 +516,20 @@ h4 {
 }
 
 .weather-info h4 {
-  color: #006633;
+  color: #064e3b;
   font-size: 1.125rem;
   font-weight: 600;
 }
 
 .weather-info p {
-  color: #333366;
+  color: #374151;
   font-size: 0.875rem;
   line-height: 1.5;
 }
 
 /* Footer */
 .footer {
-  background: #333366;
+  background: #374151;
   color: white;
   padding: 3rem 1rem;
 }
@@ -550,16 +550,16 @@ h4 {
 }
 
 .footer-section p {
-  color: #cccccc;
+  color: #d1d5db;
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
 
 .footer-link {
-  color: #ffffff;
+  color: #fdf2f8;
   text-decoration: none;
   font-weight: 500;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #d1d5db;
   transition: border-color 0.3s ease;
 }
 
