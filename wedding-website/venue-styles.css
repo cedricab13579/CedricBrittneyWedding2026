@@ -1,4 +1,8 @@
 /* Reset and Base Styles */
+:root {
+  color-scheme: light; /* Tells the browser to render as light mode */
+}
+
 * {
   margin: 0;
   padding: 0;
