@@ -1,193 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RSVP - Brittney & Cedric's Wedding</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
 </head>
+
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
                 <a href="index.html">
-                    <img src="public/images/BC-Logo.png" alt="Brittney & Cedric Wedding Logo - Elegant floral design with BC monogram and October 17th 2026" class="nav-logo">
+                    <img
+                        src="public/images/BC-Logo.png"
+                        alt="Brittney & Cedric Wedding Logo"
+                        class="nav-logo"
+                    />
                 </a>
             </div>
+
             <div class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
-                <!--
-                <a href="menu.html" class="nav-link">Menu</a>
-                -->
                 <a href="venue.html" class="nav-link">Venue</a>
-                <!--
-                <a href="registry.html" class="nav-link">Registry</a>
-                -->
                 <a href="faq.html" class="nav-link">FAQ</a>
                 <a href="rsvp.html" class="nav-link active">RSVP</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="page-hero">
         <div class="container">
             <div class="page-hero-content">
+
                 <div class="page-icon">
-                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round"
+                         class="hero-icon">
                         <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                         <line x1="16" y1="2" x2="16" y2="6"></line>
                         <line x1="8" y1="2" x2="8" y2="6"></line>
                         <line x1="3" y1="10" x2="21" y2="10"></line>
                     </svg>
                 </div>
+
                 <h1 class="page-title">RSVP</h1>
-                <p class="page-subtitle">We can't wait to celebrate with you at Hollyfield Manor!</p>
-                <p class="rsvp-deadline">Please respond by September 1, 2026</p>
+
+                <p class="page-subtitle">
+                    We can't wait to celebrate with you at Hollyfield Manor!
+                </p>
+
+                <p class="rsvp-deadline">
+                    Please respond by September 1, 2026
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- RSVP Form -->
+    <!-- RSVP FORM -->
     <section class="rsvp-form-section">
         <div class="container">
             <div class="rsvp-form-container">
+
                 <div class="rsvp-form-header">
                     <h2>Wedding RSVP Form</h2>
                     <p>October 17, 2026 • Hollyfield Manor</p>
                 </div>
 
-                <form class="rsvp-form" id="rsvpForm" action="cedricbrittney2026@gmail.com" method="post" enctype="text/plain">
-                    <!-- Personal Information -->
+                <!-- FIXED FORM -->
+                <form
+                    class="rsvp-form"
+                    id="rsvpForm"
+                    action="https://formspree.io/f/maqkadre"
+                    method="POST"
+                >
+
+                    <!-- Hidden Subject -->
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Wedding RSVP Submission"
+                    />
+
+                    <!-- Disable captcha if desired -->
+                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+                    <!-- PERSONAL INFO -->
                     <div class="form-section">
+
                         <h3 class="form-section-title">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="form-icon">
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
-                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            </svg>
                             Your Information
                         </h3>
-                        
+
                         <div class="form-row">
+
                             <div class="form-group">
                                 <label for="firstName">First Name *</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="Your first name" required>
-                                <div class="error-message" id="firstNameError" style="display: none;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                    </svg>
+
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    required
+                                    placeholder="Your first name"
+                                />
+
+                                <div class="error-message" id="firstNameError">
                                     First name is required
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <label for="lastName">Last Name *</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Your last name" required>
-                                <div class="error-message" id="lastNameError" style="display: none;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                    </svg>
+
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    required
+                                    placeholder="Your last name"
+                                />
+
+                                <div class="error-message" id="lastNameError">
                                     Last name is required
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-row">
+
                             <div class="form-group">
                                 <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
-                                <div class="error-message" id="emailError" style="display: none;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                    </svg>
-                                    <span id="emailErrorText">Email is required</span>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    placeholder="your.email@example.com"
+                                />
+
+                                <div class="error-message" id="emailError">
+                                    Please enter a valid email
                                 </div>
                             </div>
+
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="(555) 123-4567"
+                                />
                             </div>
                         </div>
                     </div>
 
-                    <!-- Attendance -->
+                    <!-- ATTENDING -->
                     <div class="form-section">
-                        <h3 class="form-section-title">Will you be attending? *</h3>
+
+                        <h3 class="form-section-title">
+                            Will you be attending? *
+                        </h3>
+
                         <div class="radio-group">
+
                             <label class="radio-label">
-                                <input type="radio" name="attending" value="yes" required>
+                                <input
+                                    type="radio"
+                                    name="attending"
+                                    value="yes"
+                                    required
+                                />
+
                                 <span class="radio-custom"></span>
                                 ✨ Joyfully accepts
                             </label>
+
                             <label class="radio-label">
-                                <input type="radio" name="attending" value="no" required>
+                                <input
+                                    type="radio"
+                                    name="attending"
+                                    value="no"
+                                    required
+                                />
+
                                 <span class="radio-custom"></span>
                                 💔 Regretfully declines
                             </label>
+
                         </div>
-                        <div class="error-message" id="attendingError" style="display: none;">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="12" y1="8" x2="12" y2="12"></line>
-                                <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                            </svg>
-                            Please let us know if you'll be attending
+
+                        <div class="error-message" id="attendingError">
+                            Please select an option
                         </div>
+
                     </div>
 
-                    <!-- Party Details (shown when attending) -->
-                    <div class="form-section party-details" id="partyDetails" style="display: none;">
-                        <h3 class="form-section-title">Party Details</h3>
-                        
+                    <!-- PARTY DETAILS -->
+                    <div
+                        class="form-section party-details"
+                        id="partyDetails"
+                        style="display:none;"
+                    >
+
+                        <h3 class="form-section-title">
+                            Party Details
+                        </h3>
+
                         <div class="form-row">
+
                             <div class="form-group">
+
                                 <label for="guestCount">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="form-icon">
-                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                    </svg>
                                     Number of Guests Attending *
                                 </label>
+
                                 <select id="guestCount" name="guestCount">
-                                    <option value="">Select number of guests</option>
+
+                                    <option value="">
+                                        Select number of guests
+                                    </option>
+
                                     <option value="1">1 Guest</option>
                                     <option value="2">2 Guests</option>
                                     <option value="3">3 Guests</option>
                                     <option value="4">4 Guests</option>
                                     <option value="5">5 Guests</option>
                                     <option value="6">6+ Guests</option>
+
                                 </select>
-                                <div class="error-message" id="guestCountError" style="display: none;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                    </svg>
-                                    Please specify number of guests
+
+                                <div class="error-message" id="guestCountError">
+                                    Please select guest count
                                 </div>
                             </div>
+
                             <div class="form-group">
+
                                 <label for="alcoholCount">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="form-icon">
-                                        <path d="M8 22h8c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2z"></path>
-                                        <path d="M12 9v4"></path>
-                                        <path d="M8 9h8"></path>
-                                    </svg>
                                     Guests Drinking Alcohol *
                                 </label>
+
                                 <select id="alcoholCount" name="alcoholCount">
-                                    <option value="">Select number drinking</option>
+
+                                    <option value="">
+                                        Select number drinking
+                                    </option>
+
                                     <option value="0">0 Guests</option>
                                     <option value="1">1 Guest</option>
                                     <option value="2">2 Guests</option>
@@ -195,670 +267,561 @@
                                     <option value="4">4 Guests</option>
                                     <option value="5">5 Guests</option>
                                     <option value="6">6+ Guests</option>
+
                                 </select>
-                                <small>This helps us plan bar service and non-alcoholic options</small>
-                                <div class="error-message" id="alcoholCountError" style="display: none;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                    </svg>
-                                    <span id="alcoholCountErrorText">Please specify number drinking alcohol</span>
+
+                                <small>
+                                    This helps us plan bar service and
+                                    non-alcoholic options.
+                                </small>
+
+                                <div class="error-message" id="alcoholCountError">
+                                    Please select alcohol count
                                 </div>
+
                             </div>
                         </div>
 
-                        <!-- Additional Guests Section -->
-                        <div class="additional-guests-section" id="additionalGuestsSection" style="display: none;">
-                            <h4 class="additional-guests-title">Additional Guest Information</h4>
+                        <!-- Additional Guests -->
+                        <div
+                            class="additional-guests-section"
+                            id="additionalGuestsSection"
+                            style="display:none;"
+                        >
+
+                            <h4 class="additional-guests-title">
+                                Additional Guest Information
+                            </h4>
+
                             <div id="additionalGuestsContainer"></div>
                         </div>
 
                         <div class="form-group">
+
                             <label for="dietaryRestrictions">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="form-icon">
-                                    <circle cx="12" cy="12" r="8"></circle>
-                                    <path d="M12 2v20"></path>
-                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                                </svg>
                                 Dietary Restrictions & Allergies
                             </label>
-                            <textarea id="dietaryRestrictions" name="dietaryRestrictions" rows="3" placeholder="Please let us know about any dietary restrictions, food allergies, or special meal requirements..."></textarea>
-                            <small>Our caterers can accommodate vegetarian, vegan, gluten-free, and other dietary needs</small>
+
+                            <textarea
+                                id="dietaryRestrictions"
+                                name="dietaryRestrictions"
+                                rows="3"
+                                placeholder="Please let us know about dietary restrictions or allergies..."
+                            ></textarea>
                         </div>
 
                         <div class="form-group">
-                            <label for="songRequest">Song Request (Optional)</label>
-                            <input type="text" id="songRequest" name="songRequest" placeholder="Any song you'd love to hear at the reception?">
+
+                            <label for="songRequest">
+                                Song Request (Optional)
+                            </label>
+
+                            <input
+                                type="text"
+                                id="songRequest"
+                                name="songRequest"
+                                placeholder="Any song you'd love to hear?"
+                            />
                         </div>
+
                     </div>
 
-                    <!-- Additional Comments -->
+                    <!-- COMMENTS -->
                     <div class="form-section">
+
                         <div class="form-group">
-                            <label for="additionalComments">Additional Comments or Questions</label>
-                            <textarea id="additionalComments" name="additionalComments" rows="3" placeholder="Anything else you'd like us to know? Questions about the venue, accommodations, or the celebration?"></textarea>
+
+                            <label for="additionalComments">
+                                Additional Comments or Questions
+                            </label>
+
+                            <textarea
+                                id="additionalComments"
+                                name="additionalComments"
+                                rows="3"
+                                placeholder="Anything else you'd like us to know?"
+                            ></textarea>
+
                         </div>
                     </div>
 
-                    <!-- Submit Button -->
+                    <!-- SUBMIT -->
                     <div class="form-submit">
-                        <button type="submit" class="btn btn-primary btn-large" id="submitBtn">
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-large"
+                            id="submitBtn"
+                        >
                             Send RSVP
                         </button>
-                        <p class="form-note">By submitting this form, you'll receive a confirmation email with all the wedding details.</p>
+
+                        <p class="form-note">
+                            You'll receive a confirmation after submission.
+                        </p>
+
                     </div>
+
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Success Message (hidden by default) -->
-    <div class="success-overlay" id="successOverlay" style="display: none;">
+    <!-- SUCCESS -->
+    <div
+        class="success-overlay"
+        id="successOverlay"
+        style="display:none;"
+    >
+
         <div class="success-content">
-            <div class="success-icon">
-                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="success-check">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
-                </svg>
-            </div>
+
             <h2>Thank You!</h2>
-            <p>Your RSVP has been received successfully. We're so excited to celebrate with you!</p>
-            <div class="success-next-steps">
-                <h3>What's Next?</h3>
-                <ul>
-                    <li>You'll receive a confirmation email shortly</li>
-                    <li>We'll send venue details and parking information closer to the date</li>
-                    <li>Check our FAQ page for answers to common questions</li>
-                    <li>Follow #BrittneyAndCedric2026 for updates</li>
-                </ul>
-            </div>
+
+            <p>
+                Your RSVP has been received successfully.
+                We're excited to celebrate with you!
+            </p>
+
             <div class="success-actions">
-                <a href="index.html" class="btn btn-primary">Back to Wedding Website</a>
-                <a href="venue.html" class="btn btn-outline">View Venue Details</a>
+                <a href="index.html" class="btn btn-primary">
+                    Back to Website
+                </a>
             </div>
+
         </div>
     </div>
 
-    <!-- Decline Message (hidden by default) -->
-    <div class="decline-overlay" id="declineOverlay" style="display: none;">
+    <!-- DECLINE -->
+    <div
+        class="decline-overlay"
+        id="declineOverlay"
+        style="display:none;"
+    >
+
         <div class="decline-content">
-            <div class="decline-icon">
-                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="decline-heart">
-                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                </svg>
-            </div>
+
             <h2>We'll Miss You</h2>
-            <p>Thank you for letting us know. While we're sad you can't join us on our special day, we completely understand.</p>
-            <div class="decline-next-steps">
-                <h3>You're Still Part of Our Story</h3>
-                <ul>
-                    <li>We'll be thinking of you on October 17th</li>
-                    <li>Follow #BrittneyAndCedric2026 for wedding updates and photos</li>
-                    <li>We'd love to celebrate with you another time soon</li>
-                    <li>Thank you for being such an important part of our lives</li>
-                </ul>
-            </div>
+
+            <p>
+                Thank you for letting us know.
+            </p>
+
             <div class="decline-actions">
-                <a href="index.html" class="btn btn-primary">Back to Wedding Website</a>
-                <a href="registry.html" class="btn btn-outline">View Our Registry</a>
+                <a href="index.html" class="btn btn-primary">
+                    Back to Website
+                </a>
             </div>
+
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
+
             <div class="footer-content">
+
                 <div class="footer-section">
                     <h4>Hollyfield Manor</h4>
-                    <p>289 Hollyfield Ln<br>Manquin, VA 23106</p>
+
+                    <p>
+                        289 Hollyfield Ln<br />
+                        Manquin, VA 23106
+                    </p>
                 </div>
+
                 <div class="footer-section">
                     <h4>Wedding Information</h4>
-                    <p>Brittney & Cedric's Wedding<br>October 17, 2026</p>
-                    <a href="index.html" class="footer-link">Back to Wedding Website</a>
+
+                    <p>
+                        Brittney & Cedric's Wedding<br />
+                        October 17, 2026
+                    </p>
                 </div>
+
                 <div class="footer-section">
                     <h4>Important Dates</h4>
-                    <p>RSVP Deadline: September 1, 2026<br>Wedding Day: October 17, 2026</p>
+
+                    <p>
+                        RSVP Deadline: September 1, 2026<br />
+                        Wedding Day: October 17, 2026
+                    </p>
                 </div>
+
             </div>
         </div>
     </footer>
 
+    <!-- JAVASCRIPT -->
     <script>
+
         let additionalGuestsData = [];
-        let errors = {};
 
-        // Clear error when user starts typing
-        function clearError(fieldName) {
-            const errorElement = document.getElementById(fieldName + 'Error');
-            if (errorElement) {
-                errorElement.style.display = 'none';
-            }
-            const inputElement = document.getElementById(fieldName);
-            if (inputElement) {
-                inputElement.classList.remove('error');
-            }
-            delete errors[fieldName];
+        // Show / Hide Errors
+        function showError(field) {
+            const el = document.getElementById(field + 'Error');
+            if (el) el.style.display = 'block';
+
+            const input = document.getElementById(field);
+            if (input) input.classList.add('error');
         }
 
-        // Show error
-        function showError(fieldName, message) {
-            const errorElement = document.getElementById(fieldName + 'Error');
-            if (errorElement) {
-                const errorText = errorElement.querySelector('span');
-                if (errorText) {
-                    errorText.textContent = message;
-                } else {
-                    // For simple error messages without span
-                    const textNode = errorElement.childNodes[errorElement.childNodes.length - 1];
-                    if (textNode && textNode.nodeType === Node.TEXT_NODE) {
-                        textNode.textContent = message;
-                    }
-                }
-                errorElement.style.display = 'flex';
-            }
-            const inputElement = document.getElementById(fieldName);
-            if (inputElement) {
-                inputElement.classList.add('error');
-            }
-            errors[fieldName] = message;
+        function clearError(field) {
+            const el = document.getElementById(field + 'Error');
+            if (el) el.style.display = 'none';
+
+            const input = document.getElementById(field);
+            if (input) input.classList.remove('error');
         }
 
-        // Add event listeners for clearing errors
-        document.getElementById('firstName').addEventListener('input', () => clearError('firstName'));
-        document.getElementById('lastName').addEventListener('input', () => clearError('lastName'));
-        document.getElementById('email').addEventListener('input', () => clearError('email'));
-        document.getElementById('guestCount').addEventListener('change', () => clearError('guestCount'));
-        document.getElementById('alcoholCount').addEventListener('change', () => clearError('alcoholCount'));
-        document.querySelectorAll('input[name="attending"]').forEach(radio => {
-            radio.addEventListener('change', () => clearError('attending'));
-        });
+        // Clear errors while typing
+        ['firstName', 'lastName', 'email', 'guestCount', 'alcoholCount']
+            .forEach(id => {
+                const el = document.getElementById(id);
 
-        // Show/hide party details based on attendance selection
-        document.querySelectorAll('input[name="attending"]').forEach(radio => {
-            radio.addEventListener('change', function() {
-                const partyDetails = document.getElementById('partyDetails');
-                if (this.value === 'yes') {
-                    partyDetails.style.display = 'block';
-                    partyDetails.querySelectorAll('select[required]').forEach(select => {
-                        select.setAttribute('required', 'required');
-                    });
-                } else {
-                    partyDetails.style.display = 'none';
-                    partyDetails.querySelectorAll('select[required]').forEach(select => {
-                        select.removeAttribute('required');
-                    });
-                    // Hide additional guests section
-                    document.getElementById('additionalGuestsSection').style.display = 'none';
-                    additionalGuestsData = [];
-                }
+                if (!el) return;
+
+                el.addEventListener('input', () => clearError(id));
+                el.addEventListener('change', () => clearError(id));
             });
-        });
 
-        // Handle guest count changes
-        document.getElementById('guestCount').addEventListener('change', function() {
-            const guestCount = parseInt(this.value) || 0;
-            const additionalGuestCount = Math.max(0, guestCount - 1);
-            const additionalGuestsSection = document.getElementById('additionalGuestsSection');
-            const additionalGuestsContainer = document.getElementById('additionalGuestsContainer');
+        // Attendance change
+        document.querySelectorAll('input[name="attending"]')
+            .forEach(radio => {
 
-            if (additionalGuestCount > 0) {
-                additionalGuestsSection.style.display = 'block';
-                
-                // Update additionalGuestsData array
-                additionalGuestsData = Array(additionalGuestCount).fill(null).map((_, index) => 
-                    additionalGuestsData[index] || { firstName: '', lastName: '' }
-                );
+                radio.addEventListener('change', function() {
 
-                // Generate HTML for additional guests
-                additionalGuestsContainer.innerHTML = additionalGuestsData.map((guest, index) => `
-                    <div class="additional-guest-card">
-                        <h5>Guest ${index + 2}</h5>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="additionalFirstName${index}">First Name *</label>
-                                <input 
-                                    type="text" 
-                                    id="additionalFirstName${index}" 
-                                    name="additionalFirstName${index}" 
-                                    value="${guest.firstName}"
-                                    placeholder="First name"
-                                    required
-                                    onchange="updateAdditionalGuest(${index}, 'firstName', this.value)"
-                                    oninput="clearAdditionalGuestError(${index}, 'firstName')"
-                                >
-                                <div class="error-message" id="additionalGuest${index}FirstNameError" style="display: none;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                    </svg>
-                                    Guest ${index + 2} first name is required
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="additionalLastName${index}">Last Name *</label>
-                                <input 
-                                    type="text" 
-                                    id="additionalLastName${index}" 
-                                    name="additionalLastName${index}" 
-                                    value="${guest.lastName}"
-                                    placeholder="Last name"
-                                    required
-                                    onchange="updateAdditionalGuest(${index}, 'lastName', this.value)"
-                                    oninput="clearAdditionalGuestError(${index}, 'lastName')"
-                                >
-                                <div class="error-message" id="additionalGuest${index}LastNameError" style="display: none;">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                    </svg>
-                                    Guest ${index + 2} last name is required
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `).join('');
-            } else {
-                additionalGuestsSection.style.display = 'none';
-                additionalGuestsData = [];
-            }
-        });
+                    clearError('attending');
 
-        // Update additional guest data
-        function updateAdditionalGuest(index, field, value) {
-            if (!additionalGuestsData[index]) {
-                additionalGuestsData[index] = { firstName: '', lastName: '' };
-            }
-            additionalGuestsData[index][field] = value;
-        }
+                    const partyDetails =
+                        document.getElementById('partyDetails');
 
-        // Clear additional guest errors
-        function clearAdditionalGuestError(index, field) {
-            const errorId = `additionalGuest${index}${field.charAt(0).toUpperCase() + field.slice(1)}NameError`;
-            const errorElement = document.getElementById(errorId);
-            if (errorElement) {
-                errorElement.style.display = 'none';
-            }
-            const inputElement = document.getElementById(`additional${field.charAt(0).toUpperCase() + field.slice(1)}Name${index}`);
-            if (inputElement) {
-                inputElement.classList.remove('error');
-            }
-            delete errors[errorId];
-        }
+                    if (this.value === 'yes') {
 
-        // Validate form
-        function validateForm() {
-            errors = {};
+                        partyDetails.style.display = 'block';
 
-            const firstName = document.getElementById('firstName').value.trim();
-            const lastName = document.getElementById('lastName').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const attending = document.querySelector('input[name="attending"]:checked')?.value;
+                        // FIXED REQUIRED SELECTS
+                        partyDetails.querySelectorAll('select')
+                            .forEach(select => {
+                                select.required = true;
+                            });
 
-            if (!firstName) showError('firstName', 'First name is required');
-            if (!lastName) showError('lastName', 'Last name is required');
-            if (!email) {
-                showError('email', 'Email is required');
-            } else if (!/\S+@\S+\.\S+/.test(email)) {
-                showError('email', 'Please enter a valid email');
-            }
-            if (!attending) showError('attending', 'Please let us know if you\'ll be attending');
+                    } else {
 
-            if (attending === 'yes') {
-                const guestCount = document.getElementById('guestCount').value;
-                const alcoholCount = document.getElementById('alcoholCount').value;
+                        partyDetails.style.display = 'none';
 
-                if (!guestCount) showError('guestCount', 'Please specify number of guests');
-                if (!alcoholCount) showError('alcoholCount', 'Please specify number drinking alcohol');
+                        partyDetails.querySelectorAll('select')
+                            .forEach(select => {
+                                select.required = false;
+                            });
 
-                const guestCountNum = parseInt(guestCount);
-                const alcoholCountNum = parseInt(alcoholCount);
-
-                if (alcoholCountNum > guestCountNum) {
-                    showError('alcoholCount', 'Cannot exceed total number of guests');
-                }
-
-                // Validate additional guests
-                additionalGuestsData.forEach((guest, index) => {
-                    if (!guest.firstName.trim()) {
-                        const errorId = `additionalGuest${index}FirstNameError`;
-                        const errorElement = document.getElementById(errorId);
-                        if (errorElement) {
-                            errorElement.style.display = 'flex';
-                        }
-                        const inputElement = document.getElementById(`additionalFirstName${index}`);
-                        if (inputElement) {
-                            inputElement.classList.add('error');
-                        }
-                        errors[errorId] = `Guest ${index + 2} first name is required`;
-                    }
-                    if (!guest.lastName.trim()) {
-                        const errorId = `additionalGuest${index}LastNameError`;
-                        const errorElement = document.getElementById(errorId);
-                        if (errorElement) {
-                            errorElement.style.display = 'flex';
-                        }
-                        const inputElement = document.getElementById(`additionalLastName${index}`);
-                        if (inputElement) {
-                            inputElement.classList.add('error');
-                        }
-                        errors[errorId] = `Guest ${index + 2} last name is required`;
+                        document.getElementById(
+                            'additionalGuestsSection'
+                        ).style.display = 'none';
                     }
                 });
+            });
+
+        // Additional guests
+        document.getElementById('guestCount')
+            .addEventListener('change', function() {
+
+                const count = parseInt(this.value || 0);
+                const additionalCount = count - 1;
+
+                const section =
+                    document.getElementById('additionalGuestsSection');
+
+                const container =
+                    document.getElementById('additionalGuestsContainer');
+
+                if (additionalCount > 0) {
+
+                    section.style.display = 'block';
+
+                    container.innerHTML = '';
+
+                    for (let i = 0; i < additionalCount; i++) {
+
+                        container.innerHTML += `
+                            <div class="additional-guest-card">
+
+                                <h5>Guest ${i + 2}</h5>
+
+                                <div class="form-row">
+
+                                    <div class="form-group">
+                                        <label>
+                                            First Name *
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            name="guest_${i + 2}_first_name"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>
+                                            Last Name *
+                                        </label>
+
+                                        <input
+                                            type="text"
+                                            name="guest_${i + 2}_last_name"
+                                            required
+                                        />
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        `;
+                    }
+
+                } else {
+
+                    section.style.display = 'none';
+                    container.innerHTML = '';
+                }
+            });
+
+        // Validation
+        function validateForm() {
+
+            let valid = true;
+
+            const firstName =
+                document.getElementById('firstName').value.trim();
+
+            const lastName =
+                document.getElementById('lastName').value.trim();
+
+            const email =
+                document.getElementById('email').value.trim();
+
+            const attending =
+                document.querySelector(
+                    'input[name="attending"]:checked'
+                );
+
+            if (!firstName) {
+                showError('firstName');
+                valid = false;
             }
 
-            return Object.keys(errors).length === 0;
+            if (!lastName) {
+                showError('lastName');
+                valid = false;
+            }
+
+            if (!email || !/\S+@\S+\.\S+/.test(email)) {
+                showError('email');
+                valid = false;
+            }
+
+            if (!attending) {
+                showError('attending');
+                valid = false;
+            }
+
+            if (attending && attending.value === 'yes') {
+
+                const guestCount =
+                    document.getElementById('guestCount').value;
+
+                const alcoholCount =
+                    document.getElementById('alcoholCount').value;
+
+                if (!guestCount) {
+                    showError('guestCount');
+                    valid = false;
+                }
+
+                if (!alcoholCount) {
+                    showError('alcoholCount');
+                    valid = false;
+                }
+
+                if (
+                    parseInt(alcoholCount) >
+                    parseInt(guestCount)
+                ) {
+                    alert(
+                        'Alcohol count cannot exceed guest count.'
+                    );
+
+                    valid = false;
+                }
+            }
+
+            return valid;
         }
 
-        // Form submission
-        document.getElementById('rsvpForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            if (!validateForm()) return;
+        // FORM SUBMISSION
+        document.getElementById('rsvpForm')
+            .addEventListener('submit', async function(e) {
 
-            // Check if user is declining
-            const attendingValue = document.querySelector('input[name="attending"]:checked')?.value;
-            
-            const submitBtn = document.getElementById('submitBtn');
-            const originalText = submitBtn.textContent;
-            
-            // Show loading state
-            submitBtn.innerHTML = `
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
-                    <div style="width: 20px; height: 20px; border: 2px solid white; border-top: 2px solid transparent; border-radius: 50%; animation: spin 1s linear infinite;"></div>
-                    Sending RSVP...
-                </div>
-            `;
-            submitBtn.disabled = true;
-            
-            // Simulate form submission delay
-            setTimeout(() => {
-                document.querySelector('.rsvp-form-section').style.display = 'none';
-                
-                if (attendingValue === 'no') {
-                    document.getElementById('declineOverlay').style.display = 'flex';
-                } else {
-                    document.getElementById('successOverlay').style.display = 'flex';
+                e.preventDefault();
+
+                if (!validateForm()) return;
+
+                const form = this;
+
+                const submitBtn =
+                    document.getElementById('submitBtn');
+
+                const originalText = submitBtn.innerHTML;
+
+                submitBtn.disabled = true;
+
+                submitBtn.innerHTML = `
+                    <div style="display:flex;align-items:center;gap:.5rem;">
+                        <div class="spinner"></div>
+                        Sending RSVP...
+                    </div>
+                `;
+
+                try {
+
+                    const response = await fetch(form.action, {
+
+                        method: 'POST',
+
+                        body: new FormData(form),
+
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+
+                        document.querySelector(
+                            '.rsvp-form-section'
+                        ).style.display = 'none';
+
+                        const attending =
+                            document.querySelector(
+                                'input[name="attending"]:checked'
+                            )?.value;
+
+                        if (attending === 'no') {
+
+                            document.getElementById(
+                                'declineOverlay'
+                            ).style.display = 'flex';
+
+                        } else {
+
+                            document.getElementById(
+                                'successOverlay'
+                            ).style.display = 'flex';
+                        }
+
+                        form.reset();
+
+                    } else {
+
+                        alert(
+                            'There was a problem sending your RSVP.'
+                        );
+                    }
+
+                } catch (error) {
+
+                    console.error(error);
+
+                    alert(
+                        'Network error. Please try again.'
+                    );
+
+                } finally {
+
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalText;
                 }
-            }, 2000);
-        });
+            });
+
     </script>
 
+    <!-- STYLES -->
     <style>
-        /* Hero icon styling */
-        .hero-icon {
-            color: var(--wedding-teal);
-        }
 
-        /* Form icon styling */
-        .form-icon {
-            color: var(--wedding-teal);
-            margin-right: 0.5rem;
-        }
-
-        /* Error styling */
         .error-message {
             display: none;
-            align-items: center;
-            gap: 0.25rem;
-            color: #ef4444;
-            font-size: 0.875rem;
-            margin-top: 0.25rem;
-        }
-
-        .error-message svg {
-            width: 16px;
-            height: 16px;
-            color: #ef4444;
+            color: #dc2626;
+            margin-top: .4rem;
+            font-size: .875rem;
         }
 
         input.error,
-        select.error {
-            border-color: #ef4444 !important;
-        }
-
-        /* Additional guests styling */
-        .additional-guests-section {
-            margin-top: 1.5rem;
-        }
-
-        .additional-guests-title {
-            font-size: 1.125rem;
-            font-family: 'Playfair Display', serif;
-            color: var(--wedding-forest);
-            margin-bottom: 1rem;
+        select.error,
+        textarea.error {
+            border-color: #dc2626 !important;
         }
 
         .additional-guest-card {
-            background: white;
-            border: 1px solid var(--wedding-sage);
-            border-radius: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 12px;
             padding: 1rem;
             margin-bottom: 1rem;
-        }
-
-        .additional-guest-card h5 {
-            font-size: 1rem;
-            font-weight: 500;
-            color: var(--wedding-forest);
-            margin-bottom: 0.75rem;
-        }
-
-        .additional-guest-card .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        /* Success overlay styles */
-        .success-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--wedding-blush), white);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            padding: 2rem;
-        }
-
-        .success-content {
             background: white;
-            border-radius: 1.5rem;
-            padding: 3rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            border: 1px solid var(--wedding-sage);
-            max-width: 32rem;
-            width: 100%;
-            text-align: center;
         }
 
-        .success-icon {
-            margin-bottom: 1.5rem;
-        }
-
-        .success-check {
-            color: var(--wedding-sage);
-        }
-
-        .success-content h2 {
-            font-size: 2.5rem;
-            font-family: 'Playfair Display', serif;
-            color: var(--wedding-forest);
-            margin-bottom: 1rem;
-        }
-
-        .success-content > p {
-            font-size: 1.25rem;
-            color: #6b7280;
-            margin-bottom: 1.5rem;
-        }
-
-        .success-next-steps {
-            background: var(--wedding-blush);
-            border-radius: 1rem;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .success-next-steps h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--wedding-forest);
-            margin-bottom: 0.75rem;
-        }
-
-        .success-next-steps ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .success-next-steps li {
-            font-size: 0.875rem;
-            color: #374151;
-            margin-bottom: 0.5rem;
-            padding-left: 0.5rem;
-        }
-
-        .success-next-steps li:before {
-            content: "• ";
-            color: var(--wedding-teal);
-            font-weight: bold;
-            margin-right: 0.5rem;
-        }
-
-        .success-actions {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        /* Decline overlay styles */
+        .success-overlay,
         .decline-overlay {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom, var(--wedding-blush), white);
+            inset: 0;
+            background: rgba(255,255,255,.96);
             display: flex;
-            align-items: center;
             justify-content: center;
-            z-index: 1000;
+            align-items: center;
+            z-index: 9999;
             padding: 2rem;
         }
 
+        .success-content,
         .decline-content {
             background: white;
-            border-radius: 1.5rem;
+            border-radius: 20px;
             padding: 3rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            border: 1px solid var(--wedding-sage);
-            max-width: 32rem;
-            width: 100%;
             text-align: center;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0,0,0,.1);
         }
 
-        .decline-icon {
-            margin-bottom: 1.5rem;
+        .spinner {
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(255,255,255,.5);
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin .8s linear infinite;
         }
 
-        .decline-heart {
-            color: var(--wedding-peach);
-        }
-
-        .decline-content h2 {
-            font-size: 2.5rem;
-            font-family: 'Playfair Display', serif;
-            color: var(--wedding-forest);
-            margin-bottom: 1rem;
-        }
-
-        .decline-content > p {
-            font-size: 1.25rem;
-            color: #6b7280;
-            margin-bottom: 1.5rem;
-        }
-
-        .decline-next-steps {
-            background: var(--wedding-blush);
-            border-radius: 1rem;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .decline-next-steps h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--wedding-forest);
-            margin-bottom: 0.75rem;
-        }
-
-        .decline-next-steps ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .decline-next-steps li {
-            font-size: 0.875rem;
-            color: #374151;
-            margin-bottom: 0.5rem;
-            padding-left: 0.5rem;
-        }
-
-        .decline-next-steps li:before {
-            content: "• ";
-            color: var(--wedding-teal);
-            font-weight: bold;
-            margin-right: 0.5rem;
-        }
-
-        .decline-actions {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        /* Spin animation for loading */
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
-        /* Responsive design */
         @media (max-width: 768px) {
-            .additional-guest-card .form-row {
-                grid-template-columns: 1fr;
+
+            .form-row {
+                grid-template-columns: 1fr !important;
             }
 
             .success-content,
             .decline-content {
                 padding: 2rem;
-                margin: 1rem;
-            }
-
-            .success-content h2,
-            .decline-content h2 {
-                font-size: 2rem;
-            }
-
-            .success-actions,
-            .decline-actions {
-                flex-direction: column;
             }
         }
+
     </style>
+
 </body>
 </html>
