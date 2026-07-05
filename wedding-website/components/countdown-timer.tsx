@@ -23,7 +23,7 @@ export default function CountdownTimer() {
 
     const calculateTimeLeft = (): TimeLeft => {
       // Wedding date: October 17, 2026 at 4:00 PM
-      const weddingDate = new Date("2026-10-17T16:00:00").getTime()
+      const weddingDate = new Date("2026-10-17T16:30:00").getTime()
       const now = new Date().getTime()
       const difference = weddingDate - now
 
@@ -88,7 +88,7 @@ export default function CountdownTimer() {
           {weddingPassed ? "We're Married!" : "Counting Down to Our Special Day"}
         </h3>
         <p className="text-wedding-teal mb-6 text-xl">
-          {weddingPassed ? "Thank you for celebrating with us!" : "October 17, 2026 at 4:00 PM"}
+          {weddingPassed ? "Thank you for celebrating with us!" : "October 17, 2026 at 4:30 PM"}
         </p>
 
         {weddingPassed ? (
